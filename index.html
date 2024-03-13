@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleiderspenden</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png">
+            <h1>Kleiderspende - Für eine bessere Welt!</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/index.html">Startseite</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="http://instagram.com">Instagram</a></li>
+            <li><a href="http://facebook.com">Facebook</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form id="donationForm">
+            <label for="donationLocation">Spendenübergabe:</label>
+            <select id="donationLocation" name="donationLocation">
+                <option value="Abholung">Abholung</option>
+                <option value="Geschäftsstelle">Übergabe an der Geschäftsstelle</option>
+                
+            </select>
+
+            <div id="pickupAddress">
+                <label for="address">Abholadresse:</label>
+                <input type="text" id="address" name="address" placeholder="Straße und Hausnummer">
+
+                <label for="zipCode">Postleitzahl:</label>
+                <input type="text" id="zipCode" name="zipCode" placeholder="PLZ">
+            </div>
+
+            <label for="donationType">Art der Kleidung:</label>
+            <select id="donationType" name="donationType">
+                <option value="Shirts">Shirts</option>
+                <option value="Hosen">Hosen</option>
+                <option value="Schuhe">Schuhe</option>
+            </select>
+
+            <label for="crisisArea">Aktuelles Krisengebiet:</label>
+            <select id="crisisArea" name="crisisArea">
+                <option value="Israel">Israel</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Japan">Japan</option>
+            </select>
+
+            <button type="submit">Registrieren</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kleiderspenden Verein</p>
+        <div class="impressum">
+            <a href="#">Impressum</a>
+        </div>
+        <div class="datenschutz">
+            <a href="#">Datenschutz</a>
+        </div>
+    </footer>
+</body>
+</html>
